@@ -23,6 +23,7 @@ public class UserController {
 
   @PostMapping
   public void saveUser(@RequestBody ReuqestDTO reuqestDTO) {
+    System.out.println("-------------");
     userService.save(reuqestDTO);
   }
 
